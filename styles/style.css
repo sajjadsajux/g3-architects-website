@@ -89,6 +89,9 @@ main>section{
   margin-bottom: 50px;
 
 }
+.banner{
+  padding-bottom: 45px;
+}
 
 .banner-tittle{
   font-size: 4rem;
@@ -154,8 +157,46 @@ font-weight: 500;
 
 
 
-/* fact you enjoy section */
+/* fact you  */
 
+#feature-cards-heading{
+  border-left: 5px solid #FF900E;
+  padding-left: 21px;
+}
+.fcardtittle{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0;
+}
+.fcard{
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  
+}
+.fcarddescription{
+}
+.fesection{
+  gap: 147px;
+}
+
+#expbadge{
+  padding: 46px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 8px;
+  margin-left: -92px;
+  margin-top: -92px;
+}
+#expyr{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.archimage img{
+  width: 100%;
+}
+
+/* feature u enjou */
 .sponsor-img{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -170,9 +211,22 @@ font-weight: 500;
 
 
 /* Sponsor Section */
+.footer-container{
+  background-color: rgba(255, 244, 231, 1);
+  max-width: 1440px;
+  height: 100px;
+  margin: 130px auto;
+  text-align: center;
+  
+}
+.footer-container p{
+  font-size: 1.25rem;
+  padding: 39px 0;
+}
 
+/* Footer Section */
 @media screen and (max-width:576px) {
-.navbar, .nav-links, .teams{
+.navbar, .nav-links, .teams, .fesection {
   flex-direction: column;
 }
 .team-img-container, .facts{
@@ -198,12 +252,17 @@ font-weight: 500;
   gap: 20px;
 
 }
+#expbadge{
+  margin-left: 17px;
+  margin-top: 17px;
+}
+
 
 
 }
   @media screen and (min-width:576px) and (max-width:992px) {
   
-    .teams{
+    .teams, .fesection{
       flex-direction: column;
 
     }
@@ -230,7 +289,11 @@ font-weight: 500;
       gap: 20px;
 
     }
-    
+    #expbadge{
+      margin-left: 12px;
+    margin-top: 12px;
+  }
+  
 
   }
 
