@@ -56,6 +56,10 @@ main>section{
   font-weight: 700;
   font-size: 2.8rem;
   }
+  .section-description{
+    max-width: 542px;
+    margin-bottom: 50px;
+  }
 
 /* Shared Styles */
 
@@ -122,6 +126,7 @@ font-weight: 500;
 .facts{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin: 0px auto;
 }
 .fact-card{
   border: 1px solid #FF900E;
@@ -145,14 +150,27 @@ font-weight: 500;
   color: #727272;
   margin-top: 5px;
 }
-.fact-description{
-  max-width: 542px;
-}
 
 
 
 
 /* fact you enjoy section */
+
+.sponsor-img{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  filter: grayscale(100%);
+}
+.sponsors-info{
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+/* Sponsor Section */
+
 @media screen and (max-width:576px) {
 .navbar, .nav-links, .teams{
   flex-direction: column;
@@ -173,7 +191,15 @@ font-weight: 500;
   gap: 24px;
 }
 
-  
+.sponsor-img{
+  grid-template-columns: repeat(1, 1fr);
+  filter: grayscale(100%);
+  justify-items: center;
+  gap: 20px;
+
+}
+
+
 }
   @media screen and (min-width:576px) and (max-width:992px) {
   
@@ -197,6 +223,14 @@ font-weight: 500;
       justify-items: center;
 
     }
+    .sponsor-img{
+      grid-template-columns: repeat(2, 1fr);
+      filter: grayscale(100%);
+      justify-items: center;
+      gap: 20px;
+
+    }
+    
 
   }
 
